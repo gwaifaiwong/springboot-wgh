@@ -21,7 +21,7 @@ public class MpGenerator {
 
         //step2:配置全局信息，包括输出路径、包名、作者等信息
         GlobalConfig globalConfig = new GlobalConfig();
-        globalConfig.setOutputDir(System.getProperty("user.dir")+"/src/main/java");
+        globalConfig.setOutputDir("D:/ProgramLearning/springboot-wgh/demo"+"/src/main/java");
         globalConfig.setAuthor("gwaifaiwong");
         globalConfig.setOpen(false);
         autoGenerator.setGlobalConfig(globalConfig);
@@ -37,7 +37,7 @@ public class MpGenerator {
         //step4:
         PackageConfig packageConfig = new PackageConfig();
         packageConfig.setParent("com.gwaifaiwong");
-        packageConfig.setModuleName("springbootdemo");
+        packageConfig.setModuleName("demo");
         packageConfig.setEntity("entity");
         packageConfig.setMapper("mapper");
         packageConfig.setService("service");
