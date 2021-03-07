@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-demo
+  datasource:
+#    driver-class-name:
+#    username: root
+#    password: 123456
+#    url:
+    druid:
+      url: jdbc:mysql://192.168.21.133:3306/test?useUnicode=true&characterEncoding=UTF8&&serverTimezone=GMT
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+  security:
+    user:
+      name: admin
+      password: 123456
+#      password: $2a$10$ZnfIkouO8oJrOee.ywwAoeoDOf4qHrrjmaEFP3bNO6otaHZTZsQcK
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+jwt:
+  header: Authorization
+  token-start-with: Bearer
+  base64-secret: XXXXXXXXXCXXXXXXXXXXXXCXXXXXXXXXXXXCXXXXXXXXXXXXCXXX
+  token-validity-in-seconds: 14400000
