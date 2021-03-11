@@ -25,7 +25,6 @@ import java.util.List;
 
 @Configuration
 @EnableSwagger2
-@EnableSwaggerBootstrapUI
 public class Swagger2Config {
 
     /**
@@ -47,7 +46,10 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("项目名称")
+                .title("swagger-bootstrap-ui RESTful APIs")
+                .description("swagger-bootstrap-ui")
+                .termsOfServiceUrl("http://127.0.0.1:8080")
+                .version("1.0")
                 .build();
     }
 
